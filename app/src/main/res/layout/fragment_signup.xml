@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignupFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cviewsignup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editemail"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:backgroundTint="@color/custom2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="#8c8c8c"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email" />
+
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editemail" />
+
+                <EditText
+                    android:id="@+id/editpassword"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:backgroundTint="@color/custom2"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="#8c8c8c"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/password" />
+
+                <TextView
+                    android:id="@+id/repass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Re-enter Password"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editpassword" />
+
+                <EditText
+                    android:id="@+id/editrepass"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:backgroundTint="@color/custom2"
+                    android:ems="10"
+
+                    android:inputType="textPassword"
+                    android:textColor="#8c8c8c"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/repass" />
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/address"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginStart="26dp"-->
+                <!--            android:layout_marginTop="8dp"-->
+                <!--            android:text="Address"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            android:textSize="12sp"-->
+                <!--            app:layout_constraintStart_toStartOf="parent"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/editnum" />-->
+
+                <!--        <EditText-->
+                <!--            android:id="@+id/editaddress"-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="50dp"-->
+                <!--            android:layout_marginStart="24dp"-->
+                <!--            android:layout_marginEnd="24dp"-->
+                <!--            android:backgroundTint="@color/custom2"-->
+                <!--            android:ems="10"-->
+                <!--            android:inputType="textPassword"-->
+                <!--            android:textColor="#8c8c8c"-->
+                <!--            app:layout_constraintEnd_toEndOf="parent"-->
+                <!--            app:layout_constraintHorizontal_bias="0.0"-->
+                <!--            app:layout_constraintStart_toStartOf="parent"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/address" />-->
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/password"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginStart="26dp"-->
+                <!--            android:layout_marginTop="8dp"-->
+                <!--            android:text="Password"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            android:textSize="12sp"-->
+                <!--            app:layout_constraintStart_toStartOf="parent"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/editemail" />-->
+
+                <!--        <EditText-->
+                <!--            android:id="@+id/editpassword"-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="50dp"-->
+                <!--            android:layout_marginStart="24dp"-->
+                <!--            android:layout_marginEnd="24dp"-->
+                <!--            android:backgroundTint="@color/custom2"-->
+                <!--            android:ems="10"-->
+                <!--            android:inputType="textPassword"-->
+                <!--            android:textColor="#8c8c8c"-->
+                <!--            app:layout_constraintEnd_toEndOf="parent"-->
+                <!--            app:layout_constraintHorizontal_bias="0.0"-->
+                <!--            app:layout_constraintStart_toStartOf="parent"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/password" />-->
+                <!--    <TextView-->
+                <!--        android:id="@+id/textView3"-->
+                <!--        android:layout_width="wrap_content"-->
+                <!--        android:layout_height="wrap_content"-->
+                <!--        android:layout_marginTop="8dp"-->
+                <!--        android:text="Forgot Password ?"-->
+                <!--        android:clickable="true"-->
+                <!--        android:textColor="@color/custom2"-->
+                <!--        android:textSize="14sp"-->
+                <!--        app:layout_constraintStart_toStartOf="@id/editPassSignIn"-->
+                <!--        app:layout_constraintTop_toBottomOf="@+id/editPassSignIn" />-->
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/custombutton"
+                    android:fontFamily="@font/font_1"
+                    android:paddingHorizontal="64dp"
+                    android:text="Sign up"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editrepass" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</RelativeLayout>

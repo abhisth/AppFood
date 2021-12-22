@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/gsActivity">
+
+    <fragment
+        android:id="@+id/gsActivity"
+        android:name="com.example.myfoodapp.GsActivity"
+        android:label="fragment_gs_activity"
+        tools:layout="@layout/fragment_gs_activity" >
+        <action
+            android:id="@+id/action_gsActivity_to_authActivity"
+            app:destination="@id/authActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/authActivity"
+        android:name="com.example.myfoodapp.AuthActivity"
+        android:label="fragment_auth_activity"
+        tools:layout="@layout/fragment_auth_activity" >
+        <action
+            android:id="@+id/action_authActivity_to_homePageActivity"
+            app:destination="@id/homePageActivity" />
+        <action
+            android:id="@+id/action_authActivity_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_authActivity_to_registersuccessFragment"
+            app:destination="@id/registersuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myfoodapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.myfoodapp.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageActivity"
+        android:name="com.example.myfoodapp.HomePageActivity"
+        android:label="fragment_home_page_activity"
+        tools:layout="@layout/fragment_home_page_activity" >
+        <action
+            android:id="@+id/action_homePageActivity_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_homePageActivity_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_homePageActivity_to_cartFragment"
+            app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_homePageActivity_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment" />
+        <action
+            android:id="@+id/action_homePageActivity_self"
+            app:destination="@id/homePageActivity" />
+        <action
+            android:id="@+id/action_homePageActivity_to_drinksDetailsFragment"
+            app:destination="@id/drinksDetailsFragment" />
+        <action
+            android:id="@+id/action_homePageActivity_to_authActivity"
+            app:destination="@id/authActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodsFragment"
+        android:name="com.example.myfoodapp.FoodsFragment"
+        android:label="fragment_foods"
+        tools:layout="@layout/fragment_foods" >
+        <action
+            android:id="@+id/action_foodsFragment_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinksFragment"
+        android:name="com.example.myfoodapp.DrinksFragment"
+        android:label="fragment_drinks"
+        tools:layout="@layout/fragment_drinks" />
+    <fragment
+        android:id="@+id/snacksFragment"
+        android:name="com.example.myfoodapp.SnacksFragment"
+        android:label="fragment_snacks"
+        tools:layout="@layout/fragment_snacks" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.myfoodapp.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_homePageActivity"
+            app:destination="@id/homePageActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.myfoodapp.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.myfoodapp.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_homePageActivity"
+            app:destination="@id/homePageActivity" />
+        <action
+            android:id="@+id/action_cartFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailsFragment"
+        android:name="com.example.myfoodapp.FoodDetailsFragment"
+        android:label="fragment_food_details"
+        tools:layout="@layout/fragment_food_details" >
+        <action
+            android:id="@+id/action_foodDetailsFragment_to_homePageActivity"
+            app:destination="@id/homePageActivity" />
+        <action
+            android:id="@+id/action_foodDetailsFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinksDetailsFragment"
+        android:name="com.example.myfoodapp.DrinksDetailsFragment"
+        android:label="fragment_drinks_details"
+        tools:layout="@layout/fragment_drinks_details" >
+        <action
+            android:id="@+id/action_drinksDetailsFragment_to_homePageActivity"
+            app:destination="@id/homePageActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.myfoodapp.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" >
+        <action
+            android:id="@+id/action_checkoutFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registersuccessFragment"
+        android:name="com.example.myfoodapp.RegistersuccessFragment"
+        android:label="fragment_registersuccess"
+        tools:layout="@layout/fragment_registersuccess" >
+        <action
+            android:id="@+id/action_registersuccessFragment_to_homePageActivity"
+            app:destination="@id/homePageActivity" />
+    </fragment>
+</navigation>
